@@ -1,0 +1,36 @@
+#include <stdio.h>//测试函数 循环实现   
+void PrintN(int N);   
+int main()  
+{  
+    int N;  
+    scanf("%d",&N);  
+    PrintN(N);  
+    return 0;   
+}   
+void PrintN(int N)  
+{  
+    int i;  
+    for(i=1;i<=N;i++)  
+    {  
+        printf("%d\n",i);     
+    }   
+    return;  
+}   
+  
+#include <stdio.h>//测试函数 循环实现   
+void PrintN(int N);   
+int main()  
+{  
+    int N;  
+    scanf("%d",&N);  
+    PrintN(N);  
+    return 0;   
+}   
+void PrintN(int N)  
+{  
+    if(N)  
+    {  
+        PrintN(N-1);  
+        printf("%d\n",N);  
+    }  
+}   //N数值过大，递归会崩溃
